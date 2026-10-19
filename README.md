@@ -74,7 +74,7 @@ Soy un desarrollador en formación, apasionado por la ingeniería backend, el di
 ## 📊 Estadísticas de GitHub
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=lillystarfull&show_icons=true&theme=radical" alt="Estadísticas de lillystarfull" />
+  <img src="https://github-readme-stats.vercel.app/api?username=holo-t-leds&show_icons=true&theme=radical" alt="Estadísticas de holo-t-leds" />
   <br><br>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=lillystarfull&theme=radical" alt="Racha de GitHub de lillystarfull" />
   <br><br>
