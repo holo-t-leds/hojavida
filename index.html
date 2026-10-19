@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tomás Hernández Herrera — Desarrollador Backend & Bases de Datos SQL</title>
+  <meta name="description" content="Hoja de vida de Tomás Hernández Herrera, aprendiz ADSO (SENA) especializado en desarrollo backend, Python/Flask y bases de datos relacionales MySQL.">
+  <meta name="theme-color" content="#0b1017">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5, Font Awesome 6 y Devicon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Activa las animaciones solo si hay JavaScript (sin JS todo el contenido queda visible) -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <!-- Barra de progreso de lectura -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ===================== NAVEGACIÓN ===================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top site-nav" id="siteNav" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand" href="#inicio"><span class="mono">&lt;</span>THH<span class="mono">/&gt;</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+            <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idiomas">Idiomas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            <li class="nav-item ms-lg-2">
+              <button class="btn btn-accent btn-sm js-print" type="button"><i class="fa-solid fa-file-arrow-down me-1"></i> PDF</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== PRESENTACIÓN ===================== -->
+    <section id="inicio" class="hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7 order-2 order-lg-1">
+            <p class="eyebrow reveal"><span class="status-dot"></span> Disponible · contrato de aprendizaje</p>
+            <h1 class="hero-title reveal">Tomás<br>Hernández <span class="outline">Herrera</span></h1>
+            <p class="hero-role reveal mono">
+              <span class="prompt">SELECT</span> rol <span class="prompt">FROM</span> perfil <span class="prompt">WHERE</span> foco =
+              '<span class="typed" id="typed" aria-live="polite">Backend</span><span class="caret">|</span>';
+            </p>
+            <p class="hero-lead reveal">Aprendiz ADSO en el SENA y Técnico en Programación de Software. Diseño bases de datos relacionales y construyo servicios backend con Python y Flask.</p>
+            <div class="d-flex flex-wrap gap-2 reveal">
+              <a href="#contacto" class="btn btn-accent"><i class="fa-solid fa-paper-plane me-2"></i>Contactar</a>
+              <button type="button" class="btn btn-ghost js-print"><i class="fa-solid fa-print me-2"></i>Descargar / Imprimir</button>
+            </div>
+            <ul class="hero-social list-unstyled d-flex gap-3 mt-4 reveal">
+              <li><a href="https://github.com/holo-t-leds" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/tomas-hern%C3%A1ndez-herrera-36b0ab2b8/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href="mailto:tomas2009hh@gmail.com" aria-label="Correo electrónico"><i class="fa-solid fa-envelope"></i></a></li>
+              <li><a href="https://wa.me/573150121218" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2 text-center">
+            <figure class="avatar reveal">
+              <!-- FOTO DE PERFIL: reemplaza "assets/img/perfil.svg" por tu imagen (ej. assets/img/perfil.jpg) -->
+              <img src="assets/img/perfil.svg" alt="Foto de perfil de Tomás Hernández Herrera" width="400" height="400">
+              <figcaption class="avatar-tag mono"><i class="fa-solid fa-location-dot me-1"></i>Medellín, CO</figcaption>
+              <span class="orbit orbit-1"><i class="devicon-python-plain"></i></span>
+              <span class="orbit orbit-2"><i class="devicon-mysql-original"></i></span>
+              <span class="orbit orbit-3"><i class="devicon-flask-original"></i></span>
+              <span class="orbit orbit-4"><i class="devicon-git-plain"></i></span>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <a href="#perfil" class="scroll-hint" aria-label="Ir al perfil"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+
+    <!-- ===================== PERFIL PROFESIONAL ===================== -->
+    <section id="perfil" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num mono">01</span>
+          <h2>Perfil profesional</h2>
+        </header>
+        <div class="row g-4">
+          <div class="col-lg-7 reveal">
+            <p class="lead-text">Tecnólogo en Análisis y Desarrollo de Software (ADSO) en formación y Técnico en Programación de Software graduado, especializado en <strong>ingeniería backend</strong> y en el <strong>modelado y la administración de bases de datos relacionales</strong> en SQL (MySQL).</p>
+            <p>Tengo experiencia en todo el ciclo de vida del software: ingeniería de requerimientos, diagramación UML, implementación de servicios web, arquitectura de datos y control de versiones con Git/GitHub. Soy analítico, proactivo y me gusta trabajar en equipo en entornos ágiles.</p>
+          </div>
+          <div class="col-lg-5">
+            <div class="row g-3">
+              <div class="col-6 reveal"><div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">Proyectos destacados</span></div></div>
+              <div class="col-6 reveal"><div class="stat"><span class="stat-num" data-count="15" data-suffix="+">0</span><span class="stat-label">Meses de etapa práctica</span></div></div>
+              <div class="col-6 reveal"><div class="stat"><span class="stat-num" data-count="88">0</span><span class="stat-label">Percentil Saber 11</span></div></div>
+              <div class="col-6 reveal"><div class="stat"><span class="stat-num mono-num">3FN</span><span class="stat-label">Normalización de datos</span></div></div>
+            </div>
+          </div>
+        </div>
+        <ul class="soft-skills list-unstyled reveal">
+          <li><i class="fa-solid fa-people-group"></i> Trabajo en equipo</li>
+          <li><i class="fa-solid fa-brain"></i> Pensamiento analítico</li>
+          <li><i class="fa-solid fa-file-lines"></i> Documentación técnica</li>
+          <li><i class="fa-solid fa-seedling"></i> Aprendizaje autodidacta</li>
+          <li><i class="fa-solid fa-shield-halved"></i> SST y responsabilidad ambiental</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCIA ===================== -->
+    <section id="experiencia" class="section section-alt">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num mono">02</span>
+          <h2>Experiencia laboral</h2>
+        </header>
+        <ol class="timeline list-unstyled">
+          <li class="timeline-item reveal">
+            <span class="timeline-date mono">Jul 2024 — Oct 2025</span>
+            <article class="card-glass">
+              <h3>Desarrollador de Software</h3>
+              <p class="meta"><i class="fa-solid fa-building-columns me-2"></i>IE Perpetuo Socorro · Medellín · Proyecto productivo (etapa práctica)</p>
+              <ul class="bullets">
+                <li>Levanté y documenté el informe completo de requerimientos funcionales y no funcionales del sistema de información institucional.</li>
+                <li>Diseñé la arquitectura del software con diagramas UML (casos de uso, secuencia y clases) y flujogramas de datos.</li>
+                <li>Construí el modelo relacional normalizado (3FN) y su diccionario de datos, garantizando la integridad referencial.</li>
+                <li>Desarrollé el prototipo front-end responsivo y un módulo de autenticación con encriptación de credenciales y gestión de sesiones.</li>
+                <li>Implementé módulos CRUD completos con validación de datos para usuarios y funcionalidades del sistema.</li>
+                <li>Elaboré los manuales técnico y de usuario, ejecuté pruebas funcionales y desplegué el sistema en el entorno de pruebas.</li>
+              </ul>
+              <div class="tags"><span>UML</span><span>MySQL</span><span>3FN</span><span>CRUD</span><span>Autenticación</span><span>Testing</span></div>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== FORMACIÓN ===================== -->
+    <section id="formacion" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num mono">03</span>
+          <h2>Formación académica</h2>
+        </header>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="edu-card h-100">
+              <span class="badge-state current">En formación</span>
+              <i class="fa-solid fa-laptop-code edu-icon"></i>
+              <h3>Tecnología en Análisis y Desarrollo de Software (ADSO)</h3>
+              <p class="meta">SENA · CTGI, Medellín</p>
+              <p class="mono small-muted">Abr 2026 — Jul 2028 · Ficha 3484008</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="edu-card h-100">
+              <span class="badge-state">Graduado</span>
+              <i class="fa-solid fa-code edu-icon"></i>
+              <h3>Técnico en Programación de Software</h3>
+              <p class="meta">Servicio Nacional de Aprendizaje (SENA), Medellín</p>
+              <p class="mono small-muted">Feb 2024 — Dic 2025</p>
+            </article>
+          </div>
+          <div class="col-md-12 col-lg-4 reveal">
+            <article class="edu-card h-100">
+              <span class="badge-state">Graduado</span>
+              <i class="fa-solid fa-graduation-cap edu-icon"></i>
+              <h3>Bachiller Técnico en Informática / TIC</h3>
+              <p class="meta">Institución Educativa Perpetuo Socorro, Medellín</p>
+              <p class="mono small-muted">Ene 2019 — Dic 2025 · Saber 11: 325/500 (percentil 88)</p>
+            </article>
+          </div>
+        </div>
+        <h3 class="sub-title reveal"><i class="fa-solid fa-certificate me-2"></i>Certificaciones</h3>
+        <div class="row g-3">
+          <div class="col-md-6 reveal">
+            <div class="cert"><span class="mono">2024</span><p><strong>Comunicación en Equipos de Trabajo</strong> (Ficha 3124464) — SENA, plataforma Zajuna</p></div>
+          </div>
+          <div class="col-md-6 reveal">
+            <div class="cert"><span class="mono">2023</span><p><strong>Aplicación de la Electrónica y Robótica en Proyectos de Ciencia, Tecnología e Innovación</strong> — SENA</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HABILIDADES ===================== -->
+    <section id="habilidades" class="section section-alt">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num mono">04</span>
+          <h2>Habilidades técnicas</h2>
+        </header>
+
+        <!-- Pestañas por categoría: el filtrado se hace en js/main.js -->
+        <div class="filter-bar reveal" role="tablist" aria-label="Categorías de habilidades" data-filter-group="skills">
+          <button type="button" class="filter-btn active" role="tab" aria-selected="true" data-filter="all">Todas</button>
+          <button type="button" class="filter-btn" role="tab" aria-selected="false" data-filter="lenguajes">Lenguajes</button>
+          <button type="button" class="filter-btn" role="tab" aria-selected="false" data-filter="datos">Bases de datos</button>
+          <button type="button" class="filter-btn" role="tab" aria-selected="false" data-filter="backend">Backend & Web</button>
+          <button type="button" class="filter-btn" role="tab" aria-selected="false" data-filter="herramientas">Herramientas</button>
+          <button type="button" class="filter-btn" role="tab" aria-selected="false" data-filter="metodos">Metodologías</button>
+        </div>
+
+        <!-- Cada habilidad: data-cat = categoría, data-level = nivel (0-100) -->
+        <div class="row g-3 skills-grid" data-filter-target="skills">
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="datos"><div class="skill"><i class="devicon-mysql-original colored"></i><div class="skill-body"><div class="skill-top"><span>SQL / MySQL</span><span class="mono skill-pct">90%</span></div><div class="bar"><span data-level="90"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="datos"><div class="skill"><i class="devicon-postgresql-plain colored"></i><div class="skill-body"><div class="skill-top"><span>PostgreSQL</span><span class="mono skill-pct">65%</span></div><div class="bar"><span data-level="65"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="datos"><div class="skill"><i class="fa-solid fa-diagram-project"></i><div class="skill-body"><div class="skill-top"><span>Modelado MER / MR · Normalización</span><span class="mono skill-pct">90%</span></div><div class="bar"><span data-level="90"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="datos"><div class="skill"><i class="fa-solid fa-database"></i><div class="skill-body"><div class="skill-top"><span>Triggers, vistas y procedimientos</span><span class="mono skill-pct">80%</span></div><div class="bar"><span data-level="80"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="lenguajes"><div class="skill"><i class="devicon-python-plain colored"></i><div class="skill-body"><div class="skill-top"><span>Python</span><span class="mono skill-pct">80%</span></div><div class="bar"><span data-level="80"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="lenguajes"><div class="skill"><i class="devicon-javascript-plain colored"></i><div class="skill-body"><div class="skill-top"><span>JavaScript</span><span class="mono skill-pct">65%</span></div><div class="bar"><span data-level="65"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="lenguajes"><div class="skill"><i class="devicon-html5-plain colored"></i><div class="skill-body"><div class="skill-top"><span>HTML5</span><span class="mono skill-pct">85%</span></div><div class="bar"><span data-level="85"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="lenguajes"><div class="skill"><i class="devicon-css3-plain colored"></i><div class="skill-body"><div class="skill-top"><span>CSS3</span><span class="mono skill-pct">75%</span></div><div class="bar"><span data-level="75"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="lenguajes"><div class="skill"><i class="fa-solid fa-terminal"></i><div class="skill-body"><div class="skill-top"><span>PSeInt (lógica algorítmica)</span><span class="mono skill-pct">85%</span></div><div class="bar"><span data-level="85"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="backend"><div class="skill"><i class="devicon-flask-original"></i><div class="skill-body"><div class="skill-top"><span>Flask</span><span class="mono skill-pct">75%</span></div><div class="bar"><span data-level="75"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="backend"><div class="skill"><i class="fa-solid fa-plug"></i><div class="skill-body"><div class="skill-top"><span>APIs REST</span><span class="mono skill-pct">70%</span></div><div class="bar"><span data-level="70"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="backend"><div class="skill"><i class="fa-solid fa-mobile-screen"></i><div class="skill-body"><div class="skill-top"><span>Maquetación web responsiva</span><span class="mono skill-pct">75%</span></div><div class="bar"><span data-level="75"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="herramientas"><div class="skill"><i class="devicon-git-plain colored"></i><div class="skill-body"><div class="skill-top"><span>Git</span><span class="mono skill-pct">80%</span></div><div class="bar"><span data-level="80"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="herramientas"><div class="skill"><i class="devicon-github-original"></i><div class="skill-body"><div class="skill-top"><span>GitHub · Codespaces</span><span class="mono skill-pct">80%</span></div><div class="bar"><span data-level="80"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="herramientas"><div class="skill"><i class="devicon-figma-plain colored"></i><div class="skill-body"><div class="skill-top"><span>Figma</span><span class="mono skill-pct">65%</span></div><div class="bar"><span data-level="65"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="herramientas"><div class="skill"><i class="fa-solid fa-sitemap"></i><div class="skill-body"><div class="skill-top"><span>PlantUML · Graphviz</span><span class="mono skill-pct">80%</span></div><div class="bar"><span data-level="80"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="herramientas"><div class="skill"><i class="devicon-phpmyadmin-plain colored"></i><div class="skill-body"><div class="skill-top"><span>phpMyAdmin</span><span class="mono skill-pct">80%</span></div><div class="bar"><span data-level="80"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="metodos"><div class="skill"><i class="fa-solid fa-rotate"></i><div class="skill-body"><div class="skill-top"><span>Scrum · Kanban</span><span class="mono skill-pct">75%</span></div><div class="bar"><span data-level="75"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="metodos"><div class="skill"><i class="fa-solid fa-clipboard-list"></i><div class="skill-body"><div class="skill-top"><span>Requerimientos e historias de usuario</span><span class="mono skill-pct">85%</span></div><div class="bar"><span data-level="85"></span></div></div></div></div>
+          <div class="col-sm-6 col-lg-4 filter-item" data-cat="metodos"><div class="skill"><i class="fa-solid fa-shapes"></i><div class="skill-body"><div class="skill-top"><span>Diagramación UML</span><span class="mono skill-pct">85%</span></div><div class="bar"><span data-level="85"></span></div></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROYECTOS ===================== -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num mono">05</span>
+          <h2>Proyectos destacados</h2>
+        </header>
+
+        <div class="filter-bar reveal" role="tablist" aria-label="Categorías de proyectos" data-filter-group="projects">
+          <button type="button" class="filter-btn active" role="tab" aria-selected="true" data-filter="all">Todos</button>
+          <button type="button" class="filter-btn" role="tab" aria-selected="false" data-filter="backend">Backend</button>
+          <button type="button" class="filter-btn" role="tab" aria-selected="false" data-filter="datos">Bases de datos</button>
+          <button type="button" class="filter-btn" role="tab" aria-selected="false" data-filter="arquitectura">Arquitectura</button>
+        </div>
+
+        <div class="row g-4" data-filter-target="projects">
+          <div class="col-md-6 col-lg-4 filter-item" data-cat="backend datos">
+            <article class="project h-100">
+              <div class="project-head">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="mono">May — Oct 2026</span>
+              </div>
+              <h3>G.C.C. OneStyleMariana</h3>
+              <p class="project-sub">E-commerce & OMS multi-rol</p>
+              <p>Plataforma transaccional y sistema de gestión de pedidos con roles Administradora / Vendedora para automatizar el catálogo y la recepción de pedidos.</p>
+              <ul class="bullets small">
+                <li>Esquema MySQL con variaciones de inventario en tiempo real, histórico de compras y logs de auditoría.</li>
+                <li>Lógica de servidor con Flask y gestión ágil con Taiga.io y GitHub.</li>
+              </ul>
+              <div class="project-stack"><i class="devicon-python-plain" title="Python"></i><i class="devicon-flask-original" title="Flask"></i><i class="devicon-mysql-original" title="MySQL"></i><i class="devicon-github-original" title="GitHub"></i></div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 filter-item" data-cat="arquitectura">
+            <article class="project h-100">
+              <div class="project-head">
+                <i class="fa-solid fa-boxes-stacked"></i>
+                <span class="mono">2026</span>
+              </div>
+              <h3>S.L.E.A.P.</h3>
+              <p class="project-sub">Logística y enrutamiento automático de paquetes</p>
+              <p>Arquitectura conceptual y funcional de un sistema que clasifica y enruta mercancía en centros de acopio.</p>
+              <ul class="bullets small">
+                <li>Motor de reglas de negocio que calcula rutas óptimas según peso, dimensiones y código postal.</li>
+                <li>Enfoque en reducir tiempos operativos y sobrecostos de entrega.</li>
+              </ul>
+              <div class="project-stack"><i class="fa-solid fa-route" title="Enrutamiento"></i><i class="fa-solid fa-sitemap" title="UML"></i><i class="fa-solid fa-gears" title="Reglas de negocio"></i></div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 filter-item" data-cat="arquitectura">
+            <article class="project h-100">
+              <div class="project-head">
+                <i class="fa-solid fa-id-card-clip"></i>
+                <span class="mono">Jul — Ago 2026</span>
+              </div>
+              <h3>Control de acceso automatizado</h3>
+              <p class="project-sub">CTGI SENA</p>
+              <p>Conceptualización y documentación de la arquitectura técnica de un control de acceso físico con sensores RFID y códigos QR.</p>
+              <ul class="bullets small">
+                <li>Propuesta con dimensiones técnicas, socioeconómicas y normativas de la implementación.</li>
+              </ul>
+              <div class="project-stack"><i class="fa-solid fa-wifi" title="RFID"></i><i class="fa-solid fa-qrcode" title="QR"></i><i class="fa-solid fa-file-lines" title="Documentación"></i></div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 filter-item" data-cat="datos backend">
+            <article class="project h-100">
+              <div class="project-head">
+                <i class="fa-solid fa-school"></i>
+                <span class="mono">2024 — 2025</span>
+              </div>
+              <h3>Sistema de información institucional</h3>
+              <p class="project-sub">IE Perpetuo Socorro</p>
+              <p>Desde los requerimientos hasta el despliegue: modelo relacional en 3FN, autenticación segura y módulos CRUD.</p>
+              <ul class="bullets small">
+                <li>Diccionario de datos con integridad referencial.</li>
+                <li>Manuales técnico y de usuario, y pruebas funcionales.</li>
+              </ul>
+              <div class="project-stack"><i class="devicon-mysql-original" title="MySQL"></i><i class="devicon-html5-plain" title="HTML5"></i><i class="devicon-css3-plain" title="CSS3"></i><i class="fa-solid fa-lock" title="Autenticación"></i></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== IDIOMAS ===================== -->
+    <section id="idiomas" class="section section-alt">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num mono">06</span>
+          <h2>Idiomas</h2>
+        </header>
+        <div class="row g-4 justify-content-center">
+          <div class="col-sm-6 col-lg-4 reveal">
+            <div class="lang">
+              <svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fg" cx="60" cy="60" r="52" data-level="100"/></svg>
+              <div class="lang-label"><strong>Español</strong><span class="mono">Nativo</span></div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 reveal">
+            <div class="lang">
+              <svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fg" cx="60" cy="60" r="52" data-level="60"/></svg>
+              <div class="lang-label"><strong>Inglés</strong><span class="mono">B1</span></div>
+              <p class="lang-note">Lectura de documentación técnica · Saber 11: 76/100 (percentil 96)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section id="contacto" class="section contact">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num mono">07</span>
+          <h2>Hablemos</h2>
+        </header>
+        <p class="contact-lead reveal">¿Buscas un aprendiz backend con base sólida en bases de datos? Estoy disponible de inmediato.</p>
+        <div class="row g-3">
+          <div class="col-sm-6 col-lg-3 reveal">
+            <a class="contact-card" href="mailto:tomas2009hh@gmail.com"><i class="fa-solid fa-envelope"></i><span>Correo</span><strong>tomas2009hh@gmail.com</strong></a>
+          </div>
+          <div class="col-sm-6 col-lg-3 reveal">
+            <a class="contact-card" href="https://wa.me/573150121218" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><span>Teléfono / WhatsApp</span><strong>+57 315 012 1218</strong></a>
+          </div>
+          <div class="col-sm-6 col-lg-3 reveal">
+            <a class="contact-card" href="https://www.linkedin.com/in/tomas-hern%C3%A1ndez-herrera-36b0ab2b8/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span><strong>Tomás Hernández Herrera</strong></a>
+          </div>
+          <div class="col-sm-6 col-lg-3 reveal">
+            <a class="contact-card" href="https://github.com/holo-t-leds" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><span>GitHub</span><strong>holo-t-leds</strong></a>
+          </div>
+        </div>
+        <div class="text-center mt-5 reveal">
+          <button type="button" class="btn btn-accent btn-lg js-print"><i class="fa-solid fa-file-pdf me-2"></i>Descargar hoja de vida en PDF</button>
+          <button type="button" class="btn btn-ghost btn-lg ms-sm-2 mt-2 mt-sm-0 js-copy" data-copy="tomas2009hh@gmail.com"><i class="fa-regular fa-copy me-2"></i><span>Copiar correo</span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <span class="mono">© <span id="year"></span> Tomás Hernández Herrera</span>
+      <span class="mono">Medellín, Antioquia, Colombia</span>
+    </div>
+  </footer>
+
+  <button type="button" class="to-top" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
