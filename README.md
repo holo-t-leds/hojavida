@@ -23,8 +23,6 @@ Soy un desarrollador en formación, apasionado por la ingeniería backend, el di
 ### Bases de Datos
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=mysql&logoColor=white)
 
-### Ciencia de Datos / IA
-*[PENDIENTE: Herramientas o frameworks específicos de IA o ciencia de datos, más allá del interés general en la ejecución de modelos de IA locales]*
 
 ### Herramientas y DevOps
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
