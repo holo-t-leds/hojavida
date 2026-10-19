@@ -53,8 +53,7 @@ Soy un desarrollador en formación, apasionado por la ingeniería backend, el di
 *   **Tecnología en Análisis y Desarrollo de Software (ADSO)**
     *   SENA CTGI (Ficha 3484008) - Medellín, Colombia.
     *   *Año de graduación esperado:* 2028.
-*   **Ingeniería de Sistemas**
-    *   ITM - *[PENDIENTE: Confirmar fechas de inicio y graduación planificadas]*
+
 
 ## 🛠️ Habilidades
 
