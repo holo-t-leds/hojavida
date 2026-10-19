@@ -76,7 +76,7 @@ Soy un desarrollador en formación, apasionado por la ingeniería backend, el di
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=holo-t-leds&show_icons=true&theme=radical" alt="Estadísticas de holo-t-leds" />
   <br><br>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lillystarfull&theme=radical" alt="Racha de GitHub de lillystarfull" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=holo-t-leds&theme=radical" alt="Racha de GitHub de holo-t-leds" />
   <br><br>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lillystarfull&layout=compact&theme=radical" alt="Lenguajes más usados por lillystarfull" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=holo-t-leds&layout=compact&theme=radical" alt="Lenguajes más usados por holo-t-leds" />
 </div>
