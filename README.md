@@ -43,10 +43,8 @@ Soy un desarrollador en formación, apasionado por la ingeniería backend, el di
 *   **Sistema de Control de Acceso Automatizado - CTGI SENA** *(Julio 2026 - Agosto 2026)*
     *   Investigación y conceptualización de un sistema de control de acceso físico integrado mediante RFID y códigos QR.
     *   Elaboración de propuesta detallando las dimensiones técnicas, socioeconómicas y normativas de la implementación.
-*   **Administración de Servidor Minecraft Fabric** *(Septiembre 2026 - Octubre 2026)*
-    *   Configuración de servidor con soporte crossplay (Geyser/Floodgate).
-    *   Gestión de infraestructura de red, sistemas de permisos (LuckPerms), utilidades (EssentialsX) y administración de mods (Cobblemon).
-*   **Experiencia Laboral Formal:** *[PENDIENTE: Detalles sobre el inicio de patrocinio de aprendizaje tecnológico (vacantes aplicadas en Information Workers S.A.S., Gotta Ingeniería S.A.S., o Summa)]*
+
+
 
 ## 🎓 Formación Académica
 
@@ -54,21 +52,21 @@ Soy un desarrollador en formación, apasionado por la ingeniería backend, el di
     *   SENA CTGI (Ficha 3484008) - Medellín, Colombia.
     *   *Año de graduación esperado:* 2028.
 
-
-## 🛠️ Habilidades
-
-*   **Habilidades Duras:** Diseño de bases de datos relacionales, normalización, creación de triggers y procedimientos almacenados, arquitectura de software, modelado UML (PlantUML, Graphviz), lógica algorítmica (PSeInt), desarrollo backend, control de versiones.
-*   **Habilidades Blandas:** Trabajo en equipo, comunicación efectiva, gestión de documentación técnica, adaptabilidad, resolución analítica de problemas.
+| Habilidades Duras 🛠️ | Habilidades Blandas 🧠 |
+| :--- | :--- |
+| Bases de datos relacionales & Normalización | Trabajo en equipo |
+| Modelado UML (PlantUML, Graphviz) | Comunicación efectiva |
+| Desarrollo Backend (Flask) | Adaptabilidad & Análisis |
 
 ## 🌍 Idiomas
 
 *   **Español:** Nativo
-*   **Inglés:** *[PENDIENTE: Nivel de dominio]*
+*   **Inglés:** *B2*
 
 ## 📜 Cursos y Certificaciones
 
 *   **Comunicación en Equipos de Trabajo (Ficha 3124464)** - SENA (Plataforma Zajuna).
-*   *[PENDIENTE: Otras certificaciones adicionales]*
+
 
 ## 📊 Estadísticas de GitHub
 
